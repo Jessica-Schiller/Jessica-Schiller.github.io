@@ -115,27 +115,35 @@
   }
 
   .style1 {
+
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin: 0px 60% 10px 10%;
-    padding-top: 150px;
+    position: absolute;
+    top: 20%;
   }
 
   .style2 {
+    position: absolute;
     color: #FFEE00;
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin: 0px 60% 10px 10%;
+    position: absolute;
+    top: 25%;
   }
 
   .style3 {
+    position: absolute;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin: 0px 60% 10px 10%;
     padding-top: 40px;
+    position: absolute;
+    top: 33%;
   }
 
 
@@ -145,6 +153,8 @@
     font-weight: normal;
     margin: 0px 60% 0px 20%;
     padding-bottom: 10%;
+    position: absolute;
+    top: 45%;
   }
 
   .aboutmetext {
@@ -173,6 +183,17 @@
       [data-bs-theme=dark] .carousel .carousel-control-next-icon, [data-bs-theme=dark] .carousel .carousel-control-prev-icon, [data-bs-theme=dark].carousel .carousel-control-next-icon, [data-bs-theme=dark].carousel .carousel-control-prev-icon {
           filter: invert(0) grayscale(100);
       }
+
+
+
+
+
+/* Container holding the image and the text */
+.container-startscreen {
+  position: relative;
+  color: white;
+}
+
 
 </style>
 
@@ -217,6 +238,20 @@
 
   <main>
 
+    <div class="container-startscreen">
+        <img src="Bilder/Home/Startbild.png" style="width:100%;">
+        <p class="style1">Hey there!</p>
+        <p class="gelb style2">I’m Jessica Schiller</p>
+        <p class="style3">I’m a...</p>
+        <p class="style4">
+          ...designer<br>
+          ...photographer<br>
+          ...creative soul
+        </p>
+      </div>
+
+
+<!-- 
     <div class="startscreen">
       <p class="style1">Hey there!</p>
       <p class="gelb style2">I’m Jessica Schiller</p>
@@ -228,7 +263,7 @@
       </p>
 
     </div>
-
+ -->
 
 
     <h2 id="About">Nice to meet you!</h2>
