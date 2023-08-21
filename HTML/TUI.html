@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moodify</title>
+  <link rel="stylesheet" href="../CSS/navifooter.css">
+  <link rel="stylesheet" href="../CSS/projectpage.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+
+<style>
+     /* Navigation */
+    .nav-link:hover {
+	      color: #FFEE00;
+    }
+
+    .dropdown-item:hover{
+        color: #FFEE00;
+    }
+
+    .nav-link{
+        margin-left: 80px;
+    }
+
+     /* Allgemein */
+    .gelb {
+        color:#FFEE00;
+    }
+
+    body{
+	      background-color: rgb(27, 27, 27);;
+    }
+
+
+
+
+        .Startbild {
+  	  padding-top: 40px;
+      width: 100%;
+    }
+
+    .textlayout{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20% 20px;
+    }
+        .text{
+            width: 60%;
+        }
+        .Bildunterschrift{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 100px;
+        }
+
+    .size{
+        width: 60%;
+        margin: 0px 20% 0px;
+    }
+
+    .imgsize{
+        display: block;
+        margin: 20px auto 0px;
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    h3 {
+        color: #FFEE00;
+        font-size: 24px;
+        padding: 50px 20% 20px;
+    }  
+
+    .centertext{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .bildlayout{
+        display: flex;
+        padding: 20px 20% 20px;
+        width: 100%;
+    }
+    
+    .card-img-top{
+        border-radius: 5px;
+    }
+
+    .bild{
+        width: 50%;
+    }
+
+    .video{
+        padding: 20px 20% 20px;
+        width: 80%;
+    }
+
+    .container{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+             <div class="container-fluid">
+               <a class="navbar-brand" href="index.html"><img src="../Bilder/Logo.png"></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                 <ul class="navbar-nav">
+                   <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="../index.html#About">About</a>
+                   </li>
+                   <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle gelb" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                     <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Projects.html">Overview</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                       <li><a class="dropdown-item gelb" href="TUI.html">TUI</a></li>
+                       <li><a class="dropdown-item" href="Moodify.html">Moodify</a></li>
+                       <li><a class="dropdown-item" href="WebDev.html">Web Development</a></li>
+                     </ul>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </nav>
+         </header>
+
+
+  <main>
+    <h2>UX/UI Design</h2>
+    <h1 class="gelb">Tangible User Interface</h1>
+    <img src="../Bilder/TUI/TUI-1.png" class="Startbild">
+
+<h3>Why was this app made?</h3>
+
+    <div class="textlayout">
+        <div class="text">
+            <p>Development of a tangible user interface in the context of remote work and virtual teams as a contrasting interaction concept to the increasing shift of interaction to the virtual world. The result is an interactive prototype based on a programmed microcontroller and realized by 3D printing.</p>
+        </div>
+        <div class="Bildunterschrift">
+             <p>Role: UX Designer<br>
+             Tools: Figma, Arduino, 3D-Druck, Fusion 365<br>
+             Timeline: 4 months</p>
+      </div>
+    </div>
+
+    <div class="margin size">
+        <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Challenge</h5>
+                        <p class="card-text">Moodify is an app that allows to listen to music based on the mood.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Solution</h5>
+                        <p class="card-text">Moodify is an app that allows to listen to music based on the mood.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<h3>Design Process Overview</h3>
+
+    <div>
+      <img src="../Bilder/Moodify/DesignProcess-2.png" class="imgsize">
+    </div>
+
+
+    <h3>Research & Definition</h3>
+<div class="bg-white">
+    <div>
+      <img src="../Bilder/TUI/Experience-Map.jpg" class="imgsize">
+        <p class="textlayout">After I thought of a first concept for my project i started creating a Moodboard.</p>
+    </div>
+
+    <div>
+      <img src="../Bilder/TUI/Journey-Map.jpg" class="imgsize">
+        <p class="textlayout">While creating my Moodboard I started thinking about the people i wanted ti design my concept for.</p>
+    </div>
+
+    <div class="bildlayout">
+        <img src="../Bilder/TUI/Persona-Jan.jpg" class="bild">
+        <img src="../Bilder/TUI/Persona-Nicole.jpg" class="bild">
+    </div>
+</div>
+
+    <h3>Prototyping</h3>
+          
+    <div class="margin size">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 border border-0">
+                <img src="../Bilder/TUI/Interaktion/1.JPG" class="card-img-top border" alt="...">
+                <div class="card-body">
+                  <p class="centertext">Status 1</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border border-0">
+                <img src="../Bilder/TUI/Interaktion/2.JPG" class="card-img-top border" alt="...">
+                <div class="card-body">
+                  <p class="centertext">Status 1</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border border-0">
+                <img src="../Bilder/TUI/Interaktion/3.JPG" class="card-img-top border" alt="...">
+                <div class="card-body">
+                  <p class="centertext">Status 1</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border border-0">
+                <img src="../Bilder/TUI/Interaktion/4.JPG" class="card-img-top border" alt="...">
+                <div class="card-body">
+                  <p class="centertext"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border border-0">
+                  <img src="../Bilder/TUI/Interaktion/5.JPG" class="card-img-top border" alt="...">
+                  <div class="card-body">
+                    <p class="centertext"></p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+                <div class="card h-100 border border-0">
+                  <img src="../Bilder/TUI/Interaktion/6.JPG" class="card-img-top border" alt="...">
+                  <div class="card-body">
+                    <p class="centertext"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border border-0">
+                  <img src="../Bilder/TUI/Interaktion/7.JPG" class="card-img-top border" alt="...">
+                  <div class="card-body">
+                    <p class="centertext"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border border-0">
+                  <img src="../Bilder/TUI/Interaktion/8.JPG" class="card-img-top border" alt="...">
+                  <div class="card-body">
+                    <p class="centertext"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border border-0">
+                  <img src="../Bilder/TUI/Interaktion/9.JPG" class="card-img-top border" alt="...">
+                  <div class="card-body">
+                    <p class="centertext"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border border-0">
+                  <img src="../Bilder/TUI/Interaktion/10.JPG" class="card-img-top border" alt="...">
+                  <div class="card-body">
+                    <p class="centertext"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border border-0">
+                  <img src="../Bilder/TUI/Interaktion/11.JPG" class="card-img-top border" alt="...">
+                  <div class="card-body">
+                    <p class="centertext"></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col-md-4">
+              <div class="card h-100 border border-0">
+                <div class="card-body">
+                  <h5 class="card-title">Magazin</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-8">
+              <div class="card h-100 border border-0">
+                <div id="carouselExampleCaptions" class="carousel slide" >
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../Bilder/TUI/Workshop/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Bilder/TUI/Workshop/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Bilder/TUI/Workshop/4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Bilder/TUI/Workshop/5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Bilder/TUI/Workshop/6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Bilder/TUI/Workshop/7.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Bilder/TUI/Workshop/8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </main>
+
+  <footer>
+    <div id="footer">
+        <span><a href="https://www.facebook.com/jessica.schiller.180/"><img src="../Bilder/LinkedIn.png" class="Icon"/></a></span>
+        <span><a href="mailto:js373@hdm-stuttgart.de"><img src="../Bilder/E-mail.png" class="Icon"/></a></span>
+    </div>
+  </footer>
+</body>
+
+</html>

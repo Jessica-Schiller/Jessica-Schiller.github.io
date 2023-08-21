@@ -1,0 +1,75 @@
+/*allgemein*/
+
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+}
+
+main {
+	clear: both;
+}
+
+h1 {
+	color: white;
+	font-size: 50px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: normal;
+	text-align: center;
+  }  
+
+  h2 {
+	color: white;
+	font-size: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: normal;
+    margin-bottom: 10px;
+    text-align: center;
+  }  
+
+  h3 {
+    color: #FFEE00;
+	font-size: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: normal;
+}  
+h5{
+    color: white;
+}
+
+p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	margin: 10px 0px;
+}
+
+.gelb {
+	color:#FFEE00;
+}
+
+/*----Navi--------------------------------------------------------------------------------*/
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    margin: 10px 30px 0px 30px;
+}
+
+
+/*----Footer--------------------------------------------------------------------------------*/
+
+#footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+
+  }
+    .Icon {
+      width: 35px;
+      margin: 0px 10px;
+    }
