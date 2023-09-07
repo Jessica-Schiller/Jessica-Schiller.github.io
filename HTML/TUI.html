@@ -5,26 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tangible UI</title>
-  <link rel="stylesheet" href="../CSS/navifooter.css">
-  <link rel="stylesheet" href="../CSS/projectpage.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/navifooter.css">
+  <link rel="stylesheet" href="../CSS/projectpage.css" />
 </head>
 
 <style>
-     /* Navigation */
-    .nav-link:hover {
-	      color: #FFEE00;
-    }
-
-    .dropdown-item:hover{
-        color: #FFEE00;
-    }
-
-    .nav-link{
-        margin-left: 80px;
-    }
-
      /* Allgemein */
     .gelb {
         color:#FFEE00;
@@ -102,12 +89,28 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
+    
+    .btn-outline-primary {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  .btn-outline-primary:hover {
+    color: black;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  .row{
+  --bs-gutter-x: 100px;
+}
 </style>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar fixed-top navbar-expand-lg">
              <div class="container-fluid">
                <a class="navbar-brand" href="index.html"><img src="../Bilder/Logo.png"></a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,10 +127,10 @@
                    <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle gelb" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
                      <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="Projects.html">Overview</a></li>
+                      <!-- <li><a class="dropdown-item" href="Projects.html">Overview</a></li>
                       <li>
                         <hr class="dropdown-divider">
-                      </li>
+                      </li> -->
                        <li><a class="dropdown-item gelb" href="TUI.html">TUI</a></li>
                        <li><a class="dropdown-item" href="Moodify.html">Moodify</a></li>
                        <li><a class="dropdown-item" href="WebDev.html">Web Development</a></li>
@@ -145,36 +148,49 @@
     <h1 class="gelb">Tangible User Interface</h1>
     <img src="../Bilder/TUI/TUI-1.png" class="Startbild">
 
-<h3>Why was this app made?</h3>
+    <h3>Why was this app made?</h3>
 
     <div class="textlayout">
-        <div class="text">
-            <p>Development of a tangible user interface in the context of remote work and virtual teams as a contrasting interaction concept to the increasing shift of interaction to the virtual world. The result is an interactive prototype based on a programmed microcontroller and realized by 3D printing.</p>
-        </div>
-        <div class="Bildunterschrift">
-             <p>Role: UX Designer<br>
-             Tools: Figma, Arduino, 3D-Druck, Fusion 365<br>
-             Timeline: 4 months</p>
-      </div>
-    </div>
-
-    <div class="margin size">
-        <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Challenge</h5>
-                        <p class="card-text">Moodify is an app that allows to listen to music based on the mood.</p>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-8">
+              <p>Development of a tangible user interface in the context of remote work 
+                and virtual teams as a contrasting interaction concept to the increasing 
+                shift of interaction to the virtual world. The result is an interactive 
+                prototype based on a programmed microcontroller and realized by 3D printing.</p>
+              <a class="btn btn-outline-primary .btn-outline-primary:hover"
+              href="#Prototyp" role="button">see prototype</a><br><br>
+              <h5>Challenge</h5>
+              <p>Most people listen to music. No matter which 
+                genre, music follows us through the day.
+                Often we have playlist we listen in the
+                morning, we want to concentrate or when we
+                finish work. We listen music depending on
+                what we do and in which mood we are. What
+                if our music player would be able to adapt to
+                our current situation?</p><br>
+                <h5>Solution</h5>
+                <p> As solution a concept for a musicapp was
+                  developed. The solution allows the User to
+                  categorize his music by mood. The User is
+                  able to choose a mood and fitting music will
+                  be played. </p>
             </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Solution</h5>
-                        <p class="card-text">Moodify is an app that allows to listen to music based on the mood.</p>
-                    </div>
-                </div>
+            <div class="col-md-4">
+              <h5>Projectinformation</h5>
+              <p>Role: UX Designer<br>
+                Tools: Figma, Arduino, 3D-Druck, Fusion 365<br>
+                Timeline: 4 months</p><br>
+                <h5>Used methods</h5>
+                <p>
+                 Focusgroup<br>
+                 Persona<br>
+                 Experience Map<br>
+                 MoSCoW Priorisierung<br>
+                 User Journey Map <br>
+                 Prototyping<br>
+                 Usability Testing<br>
+                 Survey and questionnaires<br>
+                </p>
             </div>
         </div>
     </div>
@@ -183,27 +199,20 @@
 <h3>Design Process Overview</h3>
 
     <div>
-      <img src="../Bilder/Moodify/DesignProcess-2.png" class="imgsize">
+      <!-- <img src="../Bilder/Moodify/DesignProcess-2.png" class="imgsize"> -->
+      <img src="../Bilder/TUI/image 28.png" class="imgsize">
     </div>
 
 
-    <h3>Research & Definition</h3>
-<div class="bg-white">
+    <h3>Theoretical Background</h3>
     <div>
-      <img src="../Bilder/TUI/Experience-Map.jpg" class="imgsize">
-        <p class="textlayout">After I thought of a first concept for my project i started creating a Moodboard.</p>
+      <img src="../Bilder/TUI/image 31.png" class="imgsize">
     </div>
 
     <div>
-      <img src="../Bilder/TUI/Journey-Map.jpg" class="imgsize">
-        <p class="textlayout">While creating my Moodboard I started thinking about the people i wanted ti design my concept for.</p>
+      <img src="../Bilder/TUI/Group 66.png" class="bild100">
     </div>
 
-    <div class="bildlayout">
-        <img src="../Bilder/TUI/Persona-Jan.jpg" class="bild">
-        <img src="../Bilder/TUI/Persona-Nicole.jpg" class="bild">
-    </div>
-</div>
 
     <h3>Prototyping</h3>
           

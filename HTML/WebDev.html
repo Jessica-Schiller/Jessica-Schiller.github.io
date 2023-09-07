@@ -5,25 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Developement</title>
-  <link rel="stylesheet" href="../CSS/navifooter.css">
-  <link rel="stylesheet" href="../CSS/projectpage.css" />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/navifooter.css">
+  <link rel="stylesheet" href="../CSS/projectpage.css">
 </head>
 
 <style>
-     /* Navigation */
-    .nav-link:hover {
-	      color: #FFEE00;
-    }
-
-    .dropdown-item:hover{
-        color: #FFEE00;
-    }
-
-    .nav-link{
-        margin-left: 80px;
-    }
 
      /* Allgemein */
     .gelb {
@@ -44,7 +33,7 @@
     .textlayout{
         display: flex;
         justify-content: space-between;
-        padding: 20px 20% 20px;
+        padding: 20px 12% 20px;
     }
           .text{
               width: 60%;
@@ -70,7 +59,7 @@
     h3 {
         color: #FFEE00;
         font-size: 24px;
-        padding: 50px 20% 20px;
+        padding: 50px 0% 20px;
     }
 
     .centertext{
@@ -114,20 +103,74 @@
       justify-content: center;
       align-items: center;
     }
+
+    .container4 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
     
     .container3 img {
-      width: 19%;
-      padding: 1%;
-      transition: 0.3s;
+      width: 40%;
+      padding: 2%;
       border-radius: 5px;
     }
+    .container4 img {
+      width: 28%;
+      padding: 3%;
+      border-radius: 5px;
+    }
+
+    .text1{
+      padding: 40px 12% 20px;
+    }
+
+    /* .HFleft img{
+      width: 60%;
+      margin-top: 30px;
+      margin-left: 10%;
+      border-radius: 5px;
+      box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.9);
+    }
+
+    .HFright img{
+      margin-top: 30px;
+      width: 60%;
+      margin-left: 30%;
+      border-radius: 5px;
+      box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.9);
+    }
+
+    .mobile{
+      margin-left: 10%;
+    }
+    .mobile img {
+      width: 18%;
+      margin-right: 2%;
+      margin-top: 50px;
+      border-radius: 5px;
+      box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.9);
+    } */
+
+    .btn-outline-primary {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  .btn-outline-primary:hover {
+    color: black;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
 
 </style>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar fixed-top navbar-expand-lg">
              <div class="container-fluid">
                <a class="navbar-brand" href="index.html"><img src="../Bilder/Logo.png"></a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -144,13 +187,13 @@
                    <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle gelb" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
                      <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="Projects.html">Overview</a></li>
+                      <!-- <li><a class="dropdown-item" href="Projects.html">Overview</a></li>
                       <li>
                         <hr class="dropdown-divider">
-                      </li>
-                       <li><a class="dropdown-item gelb" href="TUI.html">TUI</a></li>
+                      </li> -->
+                       <li><a class="dropdown-item" href="TUI.html">TUI</a></li>
                        <li><a class="dropdown-item" href="Moodify.html">Moodify</a></li>
-                       <li><a class="dropdown-item" href="WebDev.html">Web Development</a></li>
+                       <li><a class="dropdown-item gelb" href="WebDev.html">Web Development</a></li>
                      </ul>
                    </li>
                  </ul>
@@ -163,13 +206,24 @@
   <main>
     <h2>UX/UI Design</h2>
     <h1 class="gelb">Web Developement</h1>
-    <img src="../Bilder/Moodify/1-2.jpg" class="Startbild">
+    <img src="../Bilder/WebDev/Startbild-1.png" class="Startbild">
 
-<h3>Why was this app made?</h3>
+<h3 class="text1">Why was this Website made?</h3>
 
     <div class="textlayout">
         <div class="text">
-            <p>Moodify is an app that allows to listen to music based on the mood. It was made for a class on mobile interaction design. The goal of this app is to enrich the way we listen to music and make it adapt to our lives.</p>
+            <p>Web development in the context of a
+              lecture with the use of HTML and CSS
+              and without tools such as Bootstrap.
+              The task was to create a website
+              consisting of several pages and a
+              responsive design, so that it is usable
+              for computers as well as tablets and
+              smartphones and changes flexibly
+              with the page width.
+              The website contains linking and various
+              interactive elements such as drop-down
+              menus and hover-over effects</p>
         </div>
         <div class="Bildunterschrift">
              <p>Role: UX & UI Designer<br>
@@ -178,134 +232,23 @@
       </div>
     </div>
 
-    <div class="margin size">
-        <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Challenge</h5>
-                        <p class="card-text">Moodify is an app that allows to listen to music based on the mood.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Solution</h5>
-                        <p class="card-text">Moodify is an app that allows to listen to music based on the mood.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-
-<h3>Design Process Overview</h3>
+<h3 class="text1">Design Process Overview</h3>
 
     <div>
-      <img src="../Bilder/Moodify/DesignProcess-2.png" class="imgsize">
+      <img src="../Bilder/WebDev/ProcessOverview.png" class="imgsize">
     </div>
 
 
-    <h3 class="centertext">Research & Definition</h3>
 
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col-md-4">
-          <div class="card h-100 border border-0">
-            <div class="card-body">
-              <h5 class="card-title">Magazin</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-8">
-          <div class="card h-100 border border-0">
-            <img src="../Bilder/Moodify/Moodboard.png" class="card-img-top" alt="...">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col-md-8">
-          <div class="card h-100 border border-0">
-            <img src="../Bilder/Moodify/Persona.png" class="card-img-top" alt="...">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border border-0">
-            <div class="card-body">
-              <h5 class="card-title">Magazin</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-<!-- <div class="bg-white">
-    <div>
-      <img src="../Bilder/Moodify/Moodboard.png" class="imgsize">
-        <p class="textlayout">After I thought of a first concept for my project i started creating a Moodboard.</p>
-    </div>
-
-    <div>
-      <img src="../Bilder/Moodify/Persona.png" class="imgsize">
-        <p class="textlayout">While creating my Moodboard I started thinking about the people i wanted ti design my concept for.</p>
-    </div>
-  </div> -->
-
-<div class="container">
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="col-md-4">
-      <div class="card h-100 border border-0">
-        <div class="card-body">
-          <h5 class="card-title">Magazin</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-8">
-      <div class="card h-100 border border-0">
-        <div id="InfoArchitektur" class="carousel slide" >
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#InfoArchitektur" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#InfoArchitektur" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#InfoArchitektur" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../Bilder/Moodify/Word-Cluster.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../Bilder/Moodify/SiteMap.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../Bilder/Moodify/InkedUser-Flow.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#InfoArchitektur" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#InfoArchitektur" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
+    <div class="text1">
+    <h3>Prototyping</h3>        
+      <p>After the requirements for the website were clarified, 
+        wireframes were created as a basis for development. 
+        Here, special emphasis was placed on drawing the containers 
+        and boxes that will later be needed in HTML and CSS.</p>
   </div>
-</div>
 
-    <h3 class="centertext">Prototyping</h3>
-
-    <div class="outercontainer1">
         <div class="container3">
           <img src="../Bilder/WebDev/Doku1.png">
           <img src="../Bilder/WebDev/Doku2.png">
@@ -325,103 +268,64 @@
           <img src="../Bilder/WebDev/Doku8.png">
           <img src="../Bilder/WebDev/Doku9.png">
         </div>
-      </div>
       
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card h-100 border border-0">
-          <div class="card-body">
-            <h5 class="card-title">Magazin</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
+<!--       
+        <div class="text1">
       </div>
 
-      <div class="col">
-        <div class="card h-100 border border-0">
-          <div id="prototype" class="carousel slide" >
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#prototype" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#prototype" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#prototype" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../Bilder/Moodify/Navigationdesign.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../Bilder/Moodify/PaperPrototype.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../Bilder/Moodify/Wireframes.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#prototype" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#prototype" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
+      <div class="container4">
+        <img src="../Bilder/WebDev/mobile/Layout-mobile-Abgabe.jpg">
+        <img src="../Bilder/WebDev/mobile/Layout-mobile-Abgabe2.jpg">
+        <img src="../Bilder/WebDev/mobile/Layout-mobile-Abgabe3.jpg">
       </div>
-    </div>
-  </div>
-
-
-<h3 class="centertext">High Fidelity</h3>
-
-<div class="margin size">
-    <div class="row row-cols-1 row-cols-md-5 g-4">
-        <div class="col">
-          <div class="card h-100 border border-0">
-            <img src="../Bilder/Moodify/1-Home.png" class="card-img-top border" alt="...">
-            <div class="card-body">
-              <p class="centertext">Home</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 border border-0">
-            <img src="../Bilder/Moodify/2-Search.png" class="card-img-top border" alt="...">
-            <div class="card-body">
-              <p class="centertext">Search</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 border border-0">
-            <img src="../Bilder/Moodify/3-Explore.png" class="card-img-top border" alt="...">
-            <div class="card-body">
-              <p class="centertext">Explore</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 border border-0">
-            <img src="../Bilder/Moodify/4-Moodradio.png" class="card-img-top border" alt="...">
-            <div class="card-body">
-              <p class="centertext">Moodradio</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card h-100 border border-0">
-              <img src="../Bilder/Moodify/5-Bibliothek.png" class="card-img-top border" alt="...">
-              <div class="card-body">
-                <p class="centertext">Bibliothek</p>
-              </div>
-            </div>
-          </div>
+      <div class="container4">
+        <img src="../Bilder/WebDev/mobile/Layout-mobile-Abgabe4.jpg">
+        <img src="../Bilder/WebDev/mobile/Layout-mobile-Abgabe5.jpg">
+        <img src="../Bilder/WebDev/mobile/Layout-mobile-Abgabe6.jpg">
       </div>
-    </div>
+      <div class="container4">
+        <img src="../Bilder/WebDev/mobile/Layout-mobile-Abgabe7.jpg">
+        <img src="../Bilder/WebDev/mobile/Layout-mobile-Abgabe8.jpg">
+        <img src="../Bilder/WebDev/mobile/Layout-mobile-Abgabe9.jpg">
+      </div> -->
 
 
-<h3 class="centertext">User Flow 1</h3>
+
+<h3 class="text1">High Fidelity</h3>
+<div class="text1 positionbutton"><a class="btn btn-outline-primary .btn-outline-primary:hover"
+  href="#Prototyp" role="button">see website</a></div>
+
+<div>
+  <img src="../Bilder/WebDev/Group 69.png" class="bild100">
+
+</div>
+
+
+              <div class="text1">
+                <h3>Lessons Learned</h3>        
+                  <p>After the requirements for the website were clarified, 
+                    wireframes were created as a basis for development. 
+                    Here, special emphasis was placed on drawing the containers 
+                    and boxes that will later be needed in HTML and CSS.</p>
+              </div>
+
+
+<!-- <div class="HFleft">
+  <img src="../Bilder/WebDev/Home.png">
+</div>
+<div class="HFright">
+  <img src="../Bilder/WebDev/Events.png">
+</div>
+<div class="HFleft">
+  <img src="../Bilder/WebDev/Work.png">
+</div>
+<div class="mobile">
+  <img src="../Bilder/WebDev/Home-mobile.png">
+  <img src="../Bilder/WebDev/Navi-mobile.png">
+  <img src="../Bilder/WebDev/News-mobile.png">
+  <img src="../Bilder/WebDev/Work-mobile.png">
+</div> -->
+
 
   </main>
 

@@ -40,7 +40,7 @@ h5{
 }
 
 p {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 16px;
 	margin: 10px 0px;
 }
@@ -48,6 +48,24 @@ p {
 .gelb {
 	color:#FFEE00;
 }
+
+.bild100{
+	width: 100%;
+  }
+
+  .vl{
+	border-left: 12px solid rgb(255, 255, 255);
+	height: 45px;
+	padding-left: 20px;
+	margin-bottom: 40px;
+	margin-top: 100px;
+  }
+
+  .vl2{
+	border-left: 12px solid rgb(255, 255, 255);
+	height: 75px;
+  }
+  
 
 /*----Navi--------------------------------------------------------------------------------*/
 
@@ -59,7 +77,32 @@ p {
     margin: 10px 30px 0px 30px;
 }
 
+body{
+	padding-top: 100px;
+}
 
+  /* Navigation */
+  .nav-link {
+	margin-left: 40px;
+	margin-right: 40px;
+	color: rgba(255, 255, 255, 0.64);
+}
+
+.nav-link:hover {
+color: #FFEE00;
+}
+
+.dropdown-item:hover {
+color: #FFEE00;
+}
+
+.nav-link:focus {
+	color: #FFEE00;
+}
+
+.navbar{
+  background-color: rgb(27, 27, 27);
+}
 /*----Footer--------------------------------------------------------------------------------*/
 
 #footer{

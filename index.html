@@ -5,28 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="stylesheet" href="CSS/navifooter.css">
-  <link rel="stylesheet" href="CSS/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="CSS/navifooter.css">
+    <link rel="stylesheet" href="CSS/index.css">
+  </head>
 
 <style>
-  /* Navigation */
-  .nav-link {
-    margin-left: 80px;
-  }
 
-  .nav-link:hover {
-    color: #FFEE00;
-  }
-
-  .dropdown-item:hover {
-    color: #FFEE00;
-  }
 
   /* Navigation */
   .gelb {
@@ -40,11 +29,11 @@
 
   h1 {
     color: white;
-    font-size: 30px;
+    font-size: 36px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
-    text-align: center;
-    margin-bottom: 40px;
+    text-align: left;
+    margin-bottom: 20px;
   }
 
   h2 {
@@ -53,8 +42,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin-bottom: 10px;
-    padding-top: 40px;
-    text-align: center;
+    text-align: left;
   }
 
 
@@ -97,14 +85,14 @@
 
 
   .btn-outline-primary {
-    color: #FFEE00;
-    border-color: #FFEE00;
+    color: #ffffff;
+    border-color: #ffffff;
   }
 
   .btn-outline-primary:hover {
     color: black;
-    background-color: #FFEE00;
-    border-color: #FFEE00;
+    background-color: #ffffff;
+    border-color: #ffffff;
   }
 
   .startscreen {
@@ -114,62 +102,13 @@
     height: 100%;
   }
 
-  .style1 {
-
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-    margin: 0px 60% 10px 10%;
-    position: absolute;
-    top: 20%;
-  }
-
-  .style2 {
-    position: absolute;
-    color: #FFEE00;
-    font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-    margin: 0px 60% 10px 10%;
-    position: absolute;
-    top: 25%;
-  }
-
-  .style3 {
-    position: absolute;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-    margin: 0px 60% 10px 10%;
-    padding-top: 40px;
-    position: absolute;
-    top: 33%;
-  }
-
-
-  .style4 {
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-    margin: 0px 60% 0px 20%;
-    padding-bottom: 10%;
-    position: absolute;
-    top: 45%;
-  }
-
-  .aboutmetext {
-    padding: 100px;
-  }
-
   .ido {
     width: 100%;
     padding: 10px 20% 0px 20%;
   }
 
-.container{
-  margin-bottom: 60px;
-  margin-top: 40px;
-}
+
+
 
 .centertext{
         text-align: center;
@@ -195,15 +134,109 @@
 .container-startscreen {
   position: relative;
   color: white;
+  margin-bottom: 100px;
 }
 
+ /* Drawings */
+ .bild {
+        max-width: 20%;
+        padding: 5px;
+        border-radius: 10px;
+    }
 
+    .bild2 {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .wid{
+      max-width: 70%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    /* WorkaltCSS */
+    .original {
+        position: relative;
+        top: 200px;
+
+    }
+
+    .hash {
+        text-decoration: none;
+        color: white;
+    }
+
+    .modal-dialog {
+        width: 100%
+    }
+
+
+    .center {
+        justify-content: center;
+        display: flex;
+    }
+
+    .img:hover {
+        filter: brightness(50%);
+        transition: 0.3s;
+    }
+
+    hr{
+        border-width: 1px;
+        border-color: #ffffff;
+        margin: 100px 15% 60px;
+    }
+
+    p{
+      padding-top: 20px;
+    }
+
+.pfeil{
+  position: absolute;
+  left: 45%;
+  width: 6%;
+  top: 90%;
+}
+
+.pfeil:hover{
+  filter: invert();
+}
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      // Hide all category contents
+      var categories = document.querySelectorAll(".item .original");
+      categories.forEach(function (category) {
+          category.style.display = "none";
+      });
+
+      // Show the default category content
+      var defaultCategory = document.querySelector(".item .hash");
+      var defaultContent = defaultCategory.querySelector(".original");
+      defaultContent.style.display = "inline";
+
+      // Add event listeners to each category link to toggle visibility
+      var categoryLinks = document.querySelectorAll(".item .hash");
+      categoryLinks.forEach(function (link) {
+          link.addEventListener("click", function (event) {
+              event.preventDefault();
+              categories.forEach(function (category) {
+                  category.style.display = "none";
+              });
+              var selectedCategory = link.querySelector(".original");
+              selectedCategory.style.display = "inline";
+          });
+      });
+  });
+</script>
 
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="Bilder/Logo.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -222,10 +255,10 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Projects</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="HTML/Projects.html">Overview</a></li>
+                <!-- <li><a class="dropdown-item" href="HTML/Projects.html">Overview</a></li>
                 <li>
                   <hr class="dropdown-divider">
-                </li>
+                </li> -->
                 <li><a class="dropdown-item" href="HTML/TUI.html">TUI</a></li>
                 <li><a class="dropdown-item" href="HTML/Moodify.html">Moodify</a></li>
                 <li><a class="dropdown-item" href="HTML/WebDev.html">Web Development</a></li>
@@ -242,37 +275,63 @@
   <main>
 
     <div class="container-startscreen">
-        <img src="Bilder/Home/Startbild.png" style="width:100%;">
-        <p class="style1">Hey there!</p>
-        <p class="gelb style2">I’m Jessica Schiller</p>
-        <p class="style3">I’m a...</p>
-        <p class="style4">
-          ...designer<br>
-          ...photographer<br>
-          ...creative soul
-        </p>
+      <a href="#About"><img src="Bilder/Home/Vector 5.png" class="pfeil" id="About"></a>
+        <img src="Bilder/Home/Group 72.png" style="width:100%;" >
       </div>
 
 
-<!-- 
-    <div class="startscreen">
-      <p class="style1">Hey there!</p>
-      <p class="gelb style2">I’m Jessica Schiller</p>
-      <p class="style3">I’m a...</p>
-      <p class="style4">
-        ...designer<br>
-        ...photographer<br>
-        ...creative soul
-      </p>
+<div class="container" >
+  <div class="row row-cols-4">
+          <div class="col-md-4"> <img src="Bilder/Home/G44A3766.jpg"
+                  class="card-img-top imgsize bild2" />
+          </div>
+          <div class="col-md-8 vl2">
+            <h2 >Nice to meet you!</h2>
+            <h1 >Want to know more about me?</h1>
+            <p>Having started with a technical degree, I am a creative and curious person, 
+              but I always ended up in design. In UX I found a place for me to bring my technical 
+              and creative interests together and live out my love for designing experiences and learning 
+              about new topics. Outside of work you can find me in the climbing gym, at the guitar or behind the camera.
+               I love to discover the world with my camera.<br></p>
+              <div class="cv">
+                <p>
+                  <a target="_blank" class="btn btn-outline-primary .btn-outline-primary:hover"
+                    href="Lebenslauf_JessicaSchiller_03.2023.pdf" role="button">View my CV</a>
+                </p>
+                <p>
+                  <a class="btn btn-outline-primary .btn-outline-primary:hover" href="#UXDesign" role="button">See my
+                    Work</a>
+                </p>
+              </div>
+          </div>
+  </div>
+</div>
 
+<hr>
+
+<div class="vl container"><h1>What I do</h1></div>
+  <div class="container text-center">
+    <div class="row row-cols-4">
+        <a href="#MyWork">
+            <div class="col"> <img src="Bilder/Home/Grafiken/1.png"
+                    class="card-img-top wid"/><p>Sketch & Paint</p></div>
+            </a>
+        <a href="#MyWork">
+            <div class="col"><img src="Bilder/Home/Grafiken/2.png"
+                    class="card-img-top wid" /><p>Photography</p></div>
+        </a>
+        <a href="#UXDesign">
+            <div class="col"><img src="Bilder/Home/Grafiken/3.png"
+                    class="card-img-top wid" /><p>UX Design</p></div>
+        </a>
+        <a href="#MyWork">
+            <div class="col"><img src="Bilder/Home/Grafiken/4.png"
+                    class="card-img-top wid" /><p>Print Design</p></div>
+        </a>
     </div>
- -->
+</div>
 
-
-    <h2 id="About">Nice to meet you!</h2>
-    <h1 class="gelb">Want to know more about me?</h1>
-
-
+<!-- 
     <div class="container">
       <div class="row row-cols-2">
         <div class="col-md-8">
@@ -344,9 +403,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-      <h1 class="gelb">Facts about me</h1>
+      <!-- <h1 class="gelb">Facts about me</h1>
 
 <div class="container">
     <div id="carouselExampleCaptions" class="carousel slide">
@@ -427,10 +486,291 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </div> -->
+  <hr>
+
+  <div><h1 class="container vl" id="UXDesign">UX/UI Design</h1></div>
+  <div class="container text-center">
+    <div class="row row-cols-4">
+        <a href="HTML/Moodify.html">
+            <div class="col"> <img src="Bilder/Projects/UXDesign/Moodify-2.png"
+                    class="card-img-top imgsize img bild2" /></div>
+            </a>
+        <a href="HTML/TUI.html">
+            <div class="col"><img src="Bilder/Projects/UXDesign/TUI.png"
+                    class="card-img-top imgsize img bild2" /></div>
+        </a>
+        <a href="HTML/WebDev.html">
+            <div class="col"><img src="Bilder/Projects/UXDesign/WebDev-2.png"
+                    class="card-img-top imgsize img bild2" /></div>
+        </a>
+        <a href="#">
+            <div class="col"><img src="Bilder/Projects/UXDesign/Coming-soon.jpg"
+                    class="card-img-top imgsize img bild2" /></div>
+        </a>
+    </div>
+</div>
+<hr>
+
+<div ><h1 class="container vl" id="MyWork">Other Work</h1></div>
+<div class="center container">
+
+  <ul class="nav mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-print-tab" data-bs-toggle="pill" data-bs-target="#pills-print"
+              type="button" role="tab" aria-controls="pills-print" aria-selected="false">Print & Packaging</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-graphics-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-graphics" type="button" role="tab" aria-controls="pills-graphics"
+              aria-selected="false">Graphics</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-photography-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-photography" type="button" role="tab" aria-controls="pills-photography"
+              aria-selected="false">Photography</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-drawings-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-drawings" type="button" role="tab" aria-controls="pills-drawings"
+              aria-selected="false">Drawings</button>
+      </li>
+  </ul>
+</div>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-print" role="tabpanel" aria-labelledby="pills-print-tab" tabindex="0">
+      <!-- Print -->
+      <div class="container text-center">
+          <div class="row row-cols-3 g-3">
+              <div class="col">
+                  <a data-bs-toggle="modal" data-bs-target="#Bookcover">
+                      <img src="Bilder/Projects/Print/1-Bookcover.png" class="bild2 img" />
+                  </a>
+              </div>
+              <div class="col">
+                  <a data-bs-toggle="modal" data-bs-target="#Knowing">
+                      <img src="Bilder/Projects/Print/2-Knowing.png" class="bild2 img" />
+                  </a>
+              </div>
+              <div class="col">
+                  <a data-bs-toggle="modal" data-bs-target="#Flyer">
+                      <img src="Bilder/Projects/Print/3-Flyer.png" class="bild2 img" />
+                  </a>
+              </div>
+              <div class="col">
+                <a data-bs-toggle="modal" data-bs-target="#Vielseitig">
+                  <img src="Bilder/Projects/Print/4-Vielseitig.png" class="bild2 img" />
+                  </a>
+              </div>
+              <div class="col">
+                <a data-bs-toggle="modal" data-bs-target="#Tastea">
+                  <img src="Bilder/Projects/Print/5-Tastea.jpg" class="bild2 img" />
+                  </a>
+              </div>
+              <div class="col">
+                <a data-bs-toggle="modal" data-bs-target="#Troncos">
+                <img src="Bilder/Projects/Print/6-Troncos.jpg" class="bild2 img" />
+                </a>
+            </div>
+            <div class="col">
+              <a data-bs-toggle="modal" data-bs-target="#FynnsJourney">
+              <img src="Bilder/Projects/Print/7-FynnsJourney.jpg" class="bild2 img" />
+              </a>
+          </div>
+          <div class="col">
+            <a data-bs-toggle="modal" data-bs-target="#Postcards">
+            <img src="Bilder/Projects/Print/8-Postcards.png" class="bild2 img" />
+            </a>
+        </div>
+        <div class="col">
+          <a data-bs-toggle="modal" data-bs-target="#ModalBild2">
+          <img src="Bilder/Projects/Print/" class="bild2 img" />
+          </a>
+      </div>
+          </div>
+      </div>
   </div>
+  <div class="tab-pane fade" id="pills-graphics" role="tabpanel" aria-labelledby="pills-graphics-tab"
+      tabindex="0">
+      <div class="container text-center">
+          <div class="row row-cols-5 g-3">
+              <div class="col"><img src="Bilder/Projects/Graphics/w-1.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/s-1.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/w-2.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/s-2.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/w-3.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/s-3.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/w-4.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/s-4.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/w-5.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/s-5.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/w-6.png" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Graphics/s-6.png" class="bild2" /></div>
+          </div>
+      </div>
+  </div>
+  <div class="tab-pane fade" id="pills-photography" role="tabpanel" aria-labelledby="pills-photography-tab"
+      tabindex="0">
+      <!-- Photography -->
+      <div class="container text-center">
+          <div class="row row-cols-4 g-3">
+              <!-- <div class="col"><img src="../Bilder/Projects/Fotografie/1-Foto.jpg" class="bild2"/></div> -->
+              <div class="col"><img src="Bilder/Projects/Fotografie/2-Foto.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/3-Foto.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/4-Foto.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/5-Foto.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/6-Foto.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/9-Foto.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/7-Foto.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/8-Foto.jpg" class="bild2" /></div>
+              <div class="col-6"><img src="Bilder/Projects/Fotografie/h-Foto-2.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/10-Foto.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/11-Foto.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/12-Foto.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Fotografie/13-Foto.jpg" class="bild2" /></div>
+              <div class="col-6"><img src="Bilder/Projects/Fotografie/h-Foto-1.jpg" class="bild2" /></div>
+          </div>
+      </div>
+  </div>
+  <div class="tab-pane fade" id="pills-drawings" role="tabpanel" aria-labelledby="pills-drawings-tab"
+      tabindex="0">
+      <!-- drawings -->
+      <div class="container text-center">
+          <div class="row row-cols-5 g-3">
+              <div class="col"><img src="Bilder/Projects/Drawings/z-acrylauge.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-acrylauge2.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-acrylmaedchen.jpg" class="bild2" /></div>
+              <!-- <div class="col"><img src="../Bilder/Projects/Drawings/z-ausstellungen.jpg" class="bild2"/></div> -->
+              <div class="col"><img src="Bilder/Projects/Drawings/z-banane.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-blaulila.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-voegel.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-vogel.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-farbenmaedchen.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-lilly.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-Mädchen.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-Portrait.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-Farbe.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-Giraffe.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-kirsche.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-Erdbeere.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-Haus.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-Auge.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-skizze.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-bleistift.jpg" class="bild2" /></div>
+              <div class="col"><img src="Bilder/Projects/Drawings/z-fisch.jpg" class="bild2" /></div>
+          </div>
+      </div>
+  </div>
+</div>
+
+        <!-- Modal -->
+                <!-- Bookcover -->
+        <div class="modal fade" id="Bookcover" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Bilder/Projects/Print/1-info.png" class="imgsize">
+                  </div>
+                  </div>
+              </div>
+          </div>
+        <!-- Knowing -->
+      <div class="modal fade" id="Knowing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                  <div class="modal-body">
+                        <img src="Bilder/Projects/Print/2-Knowing-info.png" class="imgsize">
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!-- Flyer -->
+      <div class="modal fade" id="Flyer" tabindex="-1" aria-labelledby="Flyer" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                <div class="modal-body">
+                      <img src="Bilder/Projects/Print/3-Flyer-info.png" class="imgsize">
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Vielseitig -->
+    <div class="modal fade" id="Vielseitig" tabindex="-1" aria-labelledby="Vielseitig" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+              <div class="modal-body">
+                    <img src="Bilder/Projects/Print/1-info.png" class="imgsize">
+              </div>
+          </div>
+      </div>
+  </div>
+        <!-- Tastea -->
+  <div class="modal fade" id="Tastea" tabindex="-1" aria-labelledby="Tastea" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+            <div class="modal-body">
+                  <img src="Bilder/Projects/Print/5-Tastea-info.png" class="imgsize">
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Troncos -->
+<div class="modal fade" id="Troncos" tabindex="-1" aria-labelledby="Troncos" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+          <div class="modal-body">
+                <img src="Bilder/Projects/Print/6-Troncos-info.png" class="imgsize">
+          </div>
+      </div>
+  </div>
+</div>
+        <!-- FynnsJourney -->
+<div class="modal fade" id="FynnsJourney" tabindex="-1" aria-labelledby="FynnsJourney" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+          <div class="modal-body">
+                <img src="Bilder/Projects/Print/7-FynnsJourney-info.png" class="imgsize">
+          </div>
+      </div>
+  </div>
+</div>
+        <!-- Postcards -->
+<div class="modal fade" id="Postcards" tabindex="-1" aria-labelledby="Postcards" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+          <div class="modal-body">
+                <img src="Bilder/Projects/Print/8-Postcards-info.png" class="imgsize">
+          </div>
+      </div>
+  </div>
+</div>
 
   </main>
-
+  <hr>
   <footer>
     <div id="footer">
       <span><a href="https://www.facebook.com/jessica.schiller.180/"><img src="Bilder/LinkedIn.png"
