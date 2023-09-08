@@ -12,39 +12,6 @@ main {
 	clear: both;
 }
 
-h1 {
-	color: white;
-	font-size: 50px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: normal;
-	text-align: center;
-  }  
-
-  h2 {
-	color: white;
-	font-size: 16px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: normal;
-    margin-bottom: 10px;
-    text-align: center;
-  }  
-
-  h3 {
-    color: #FFEE00;
-	font-size: 16px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: normal;
-}  
-h5{
-    color: white;
-}
-
-p {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 16px;
-	margin: 10px 0px;
-}
-
 .gelb {
 	color:#FFEE00;
 }
@@ -52,6 +19,49 @@ p {
 .bild100{
 	width: 100%;
   }
+
+.bild{
+	width: 50%;
+}
+
+
+/*----text--------------------------------------------------------------------------------*/
+		h1 {
+			color: white;
+			font-size: 50px;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-weight: normal;
+			text-align: center;
+		}  
+
+		h2 {
+			color: white;
+			font-size: 16px;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-weight: normal;
+			text-align: center;
+		}  
+
+		h3 {
+			color: #FFEE00;
+			font-size: 16px;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-weight: normal;
+			font-size: 24px;
+			padding: 50px 20% 20px;
+		}  
+
+
+		h5{
+			color: white;
+		}
+
+		p {
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-size: 16px;
+			margin: 10px 0px;
+		}
+
 
   .vl{
 	border-left: 12px solid rgb(255, 255, 255);
@@ -65,7 +75,54 @@ p {
 	border-left: 12px solid rgb(255, 255, 255);
 	height: 75px;
   }
+
+/*----Projektpage--------------------------------------------------------------------------------*/  
   
+	.Startbild {
+		padding-top: 40px;
+		width: 100%;
+	}
+
+	.textlayout{
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 20% 20px;
+	}
+	.text{
+		width: 60%;
+	}
+	.Bildunterschrift{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 100px;
+	}
+
+/*----Button--------------------------------------------------------------------------------*/
+  .cv {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .cv a{
+    margin-right: 20px;
+  }
+
+
+  .btn-outline-primary {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  .btn-outline-primary:hover {
+    color: black;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+
+    .centertext{
+            text-align: center;
+  }
+
 
 /*----Navi--------------------------------------------------------------------------------*/
 
@@ -79,6 +136,7 @@ p {
 
 body{
 	padding-top: 100px;
+	background-color: rgb(27, 27, 27);
 }
 
   /* Navigation */
@@ -103,6 +161,7 @@ color: #FFEE00;
 .navbar{
   background-color: rgb(27, 27, 27);
 }
+
 /*----Footer--------------------------------------------------------------------------------*/
 
 #footer{
