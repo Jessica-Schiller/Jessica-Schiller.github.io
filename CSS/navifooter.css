@@ -24,6 +24,10 @@ main {
 	width: 50%;
 }
 
+.centertext{
+	text-align: center;
+}
+
 
 /*----text--------------------------------------------------------------------------------*/
 		h1 {
@@ -44,16 +48,16 @@ main {
 
 		h3 {
 			color: #FFEE00;
-			font-size: 16px;
 			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			font-weight: normal;
-			font-size: 24px;
-			padding: 50px 20% 20px;
+			font-size: 28px;
+			padding: 50px 15% 10px;
 		}  
 
 
 		h5{
 			color: white;
+			font-size: 24px;
 		}
 
 		p {
@@ -86,15 +90,12 @@ main {
 	.textlayout{
 		display: flex;
 		justify-content: space-between;
-		padding: 20px 20% 20px;
+		padding: 20px 15% 20px;
 	}
-	.text{
-		width: 60%;
-	}
-	.Bildunterschrift{
-		display: flex;
-		flex-direction: column;
-		padding-bottom: 100px;
+
+	.Layout{
+		text-align: center;
+		padding: 20px 0px 20px;
 	}
 
 /*----Button--------------------------------------------------------------------------------*/
@@ -119,9 +120,7 @@ main {
     border-color: #ffffff;
   }
 
-    .centertext{
-            text-align: center;
-  }
+
 
 
 /*----Navi--------------------------------------------------------------------------------*/
