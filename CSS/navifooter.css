@@ -170,12 +170,36 @@ color: #FFEE00;
 
 #footer{
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    justify-content: space-between;
+	padding: 0px 15% 60px;
 
   }
     .Icon {
-      width: 35px;
+      width: 25px;
       margin: 0px 10px;
     }
+
+	.impressum {
+		margin-left: 40px;
+		margin-right: 40px;
+		color: rgba(255, 255, 255, 0.64);
+			padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+			font-size: var(--bs-nav-link-font-size);
+			font-weight: var(--bs-nav-link-font-weight);
+			text-decoration: none;
+			background: 0 0;
+			border: 0;
+			transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+	}
+
+	.impressum:hover {
+		color: #FFEE00;
+		}
+		
+		.impressum:hover {
+		color: #FFEE00;
+		}
+		
+		.impressum:focus {
+			color: #FFEE00;
+		}
