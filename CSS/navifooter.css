@@ -106,7 +106,7 @@ hr{
 /*----Button--------------------------------------------------------------------------------*/
   .cv {
     display: flex;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
 
   .cv a{
@@ -124,8 +124,6 @@ hr{
     background-color: #ffffff;
     border-color: #ffffff;
   }
-
-
 
 
 /*----Navi--------------------------------------------------------------------------------*/
@@ -174,7 +172,7 @@ color: #FFEE00;
 	padding: 0px 15% 60px;
 
   }
-  
+
   .Icon {
 	width: 25px;
 	margin: 0px 10px;
