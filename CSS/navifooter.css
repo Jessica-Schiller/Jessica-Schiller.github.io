@@ -117,6 +117,8 @@ hr{
   .btn-outline-primary {
     color: #ffffff;
     border-color: #ffffff;
+	--bs-btn-active-bg: #ffffff;
+	--bs-btn-active-border-color: #ffffff;
   }
 
   .btn-outline-primary:hover {
@@ -124,6 +126,8 @@ hr{
     background-color: #ffffff;
     border-color: #ffffff;
   }
+
+
 
 
 /*----Navi--------------------------------------------------------------------------------*/
@@ -146,6 +150,7 @@ body{
 	margin-left: 40px;
 	margin-right: 40px;
 	color: rgba(255, 255, 255, 0.64);
+	color: var(--bs-nav-link-color);
 }
 
 .nav-link:hover {
