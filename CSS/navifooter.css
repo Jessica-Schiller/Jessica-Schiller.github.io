@@ -34,6 +34,10 @@ hr{
 	margin: 100px 15% 60px;
 }
 
+.hover:hover {
+	color: #FFEE00;
+}
+
 /*----text--------------------------------------------------------------------------------*/
 		h1 {
 			color: white;
@@ -66,7 +70,7 @@ hr{
 		}
 
 		p {
-			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			font-size: 16px;
 			margin: 10px 0px;
 		}
@@ -148,7 +152,7 @@ body{
   /* Navigation */
   .nav-link {
 	margin-left: 40px;
-	margin-right: 40px;
+	margin-right: 00px;
 	color: rgba(255, 255, 255, 0.64);
 }
 
